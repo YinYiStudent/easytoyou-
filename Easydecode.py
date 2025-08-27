@@ -106,7 +106,7 @@ def UploadFile(filename, php):
     try:
         proxy = {'http': '127.0.0.1:8080', 'https': '127.0.0.1:8080'}
         decode_url = "https://easytoyou.eu:443/decoder/ic11php74"
-        decode_cookies = {"PHPSESSID": "no9p9pcmbkmfem4kb80qiglvi5", "_ga": "GA1.1.1870566490.1755502099", "_ga_GK60DC8FLY": "GS2.1.s1756255877$o10$g1$t1756257940$j60$l0$h0"}
+        decode_cookies = {"PHPSESSID": "XXX", "_ga": "XXX", "_ga_GK60DC8FLY": "XXX"}
         decode_headers = {"Cache-Control": "max-age=0", "Sec-Ch-Ua": "\"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\"", "Sec-Ch-Ua-Mobile": "?0", "Sec-Ch-Ua-Platform": "\"macOS\"", "Origin": "https://easytoyou.eu", "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryMveNXoSCfqKpuxwy", "Upgrade-Insecure-Requests": "1", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", "Sec-Fetch-Site": "same-origin", "Sec-Fetch-Mode": "navigate", "Sec-Fetch-User": "?1", "Sec-Fetch-Dest": "document", "Referer": "https://easytoyou.eu/decoder/ic11php74", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "zh-CN,zh;q=0.9", "Priority": "u=0, i"}
         
         decode_data = "------WebKitFormBoundaryMveNXoSCfqKpuxwy\r\nContent-Disposition: form-data; name=\"XXXXX[]\"; filename=\"" + filename + "\"\r\nContent-Type: text/php\r\n\r\n" + php + "\r\n------WebKitFormBoundaryMveNXoSCfqKpuxwy\r\nContent-Disposition: form-data; name=\"submit\"\r\n\r\nDecode\r\n------WebKitFormBoundaryMveNXoSCfqKpuxwy--\r\n"
